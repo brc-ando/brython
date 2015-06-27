@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>101回目の禁煙（？） by WYAG Team</title>
+<title>Bootstrap Real Estate Website Template</title>
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -18,7 +19,6 @@
     <![endif]-->
 </head>
 <body>
-
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -61,7 +61,6 @@
   
 <hr>
 
-
       <!-- ここから左側 -->
 
 <div class="container">
@@ -75,43 +74,42 @@
                 <label for="location1" class="control-label">ご年齢</label>
                 <div class="input-group">
                   <div class="input-group-addon">歳</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                  <input type="text" class="form-control" id="actualAge">
                 </div>
               </div>
               <div class="form-group">
                 <label for="type1" class="control-label">吸い始めた年齢</label>
                 <div class="input-group">
                   <div class="input-group-addon">歳</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                    <input type="text" class="form-control" id="actualStartAge">
                 </div>
               </div>
               <div class="form-group">
                 <label for="type1" class="control-label">1日の本数</label>
                 <div class="input-group">
                   <div class="input-group-addon">本／日</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                    <input type="text" class="form-control" id="actualNum">
                 </div>
               </div>
               <div class="form-group">
                 <label for="pricefrom" class="control-label">メビウスの価格</label>
                 <div class="input-group">
                   <div class="input-group-addon">￥／箱</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                  <input type="text" class="form-control" id="price">
                 </div>
               </div>
               <div class="form-group">
                 <label for="priceto" class="control-label">平均寿命</label>
                 <div class="input-group">
                   <div class="input-group-addon">歳</div>
-                  <input type="text" class="form-control" id="priceto">
+                  <input type="text" class="form-control" id="featureAverage">
                 </div>
               </div>
-              <p class="text-center"><a href="#" class="btn btn-danger" role="button">計算</a></p>
+              <p class="text-center"><a id="btnActualalc" class="btn btn-danger" role="button">計算</a></p>
             </form>
           </div>
+         </div>
           
-    </div><!--/.col-lg-3 col-md-6 col-md-offset-3 col-lg-offset-0-->
-        
     <div class="col-lg-2 col-md-6 col-sm-6">
           <div class="well">
             <h3 class="text-center">吉川部長の理想</h3>
@@ -120,38 +118,38 @@
                 <label for="location1" class="control-label">ご年齢</label>
                 <div class="input-group">
                   <div class="input-group-addon">歳</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                  <input type="text" class="form-control" id="priceFeatureAge">
                 </div>
               </div>
               <div class="form-group">
                 <label for="type1" class="control-label">吸い始めた年齢</label>
                 <div class="input-group">
                   <div class="input-group-addon">歳</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                    <input type="text" class="form-control" id="priceFeatureStartAge">
                 </div>
               </div>
               <div class="form-group">
                 <label for="type1" class="control-label">1日の本数</label>
                 <div class="input-group">
                   <div class="input-group-addon">本／日</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                    <input type="text" class="form-control" id="priceFeatureNum">
                 </div>
               </div>
               <div class="form-group">
                 <label for="pricefrom" class="control-label">メビウスの価格</label>
                 <div class="input-group">
                   <div class="input-group-addon">￥／箱</div>
-                  <input type="text" class="form-control" id="pricefrom">
+                    <input type="text" class="form-control" id="priceFeature">
                 </div>
               </div>
               <div class="form-group">
                 <label for="priceto" class="control-label">平均寿命</label>
                 <div class="input-group">
                   <div class="input-group-addon">歳</div>
-                  <input type="text" class="form-control" id="priceto">
+                  <input type="text" class="form-control" id="averageAge">
                 </div>
               </div>
-              <p class="text-center"><a href="#" class="btn btn-danger" role="button">計算</a></p>
+              <p class="text-center"><a id="btnFeatureCalc" class="btn btn-danger" role="button" >計算</a></p>
             </form>
           </div>
           
@@ -161,66 +159,66 @@
       
         <div class="col-lg-8 col-md-12">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
               <div class="thumbnail">
                 <div class="caption">
                   <h3>コスト削減グラフ</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <p>《《0=(ﾟ〇ﾟ)=0》》ﾊﾞﾘｱｰ!</p>
                   <hr>
-                  <div>
+                  <div id="costGraph" >
                   ここにグラフ入れてね
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
               <div class="thumbnail">
                 <div class="caption">
                   <h3>お金節約グラフ</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <p>( ´⊿`)y-~~</p>
                   <hr>
-                  <div>
+                  <div id="moneyGraph">
                   ここにグラフ入れてね
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-6 hidden-sm hidden-xs">
               <div class="thumbnail">
                 <div class="caption">
                   <h3>余命グラフ</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <p>(-∧-)合掌・・・</p>
                   <hr>
-                  <div>
-                  ここにグラフ入れてね
-                  </div>
+                    <div id="ageGraph">
+                        ここにグラフ入れてね
+                    </div>
                 </div>
               </div>
             </div>
           </div>
           
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
               <div class="thumbnail">
                 <div class="caption">
                   <h3>節約時間</h3>
-                  <div class="result-control"><!--ここに結果を表示--></div> <div style="display:inline-block;">時間</div>
+                  <div class="result-control" id="jikan"><!--ここに結果を表示--></div> <div style="display:inline-block;">時間</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
               <div class="thumbnail">
                 <div class="caption">
                   <h3>総タバコ代</h3>
-                  <div class="result-control"><!--ここに結果を表示--></div> <div style="display:inline-block;">円</div>
+                    <div class="result-control" id="tabaco"><!--ここに結果を表示--></div> <div style="display:inline-block;">円</div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="col-lg-4 col-md-4 col-sm-6 hidden-sm hidden-xs">
               <div class="thumbnail">
                 <div class="caption">
                   <h3>余命</h3>
-                  <div class="result-control"><!--ここに結果を表示--></div> <div style="display:inline-block;">年</div>
+                    <div class="result-control" id="yomei"><!--ここに結果を表示--></div> <div style="display:inline-block;">年</div>
                 </div>
               </div>
             </div>
@@ -230,12 +228,36 @@
           <p style="text-align: center; margin-top:15px;"><a href="result_02.html" class="btn btn-danger btn-lg">吉川部長の意思（？）はコチラ</a></p>
           
         </div><!--/.col-lg-9 col-md-12-->
-    
 
-    
   </div><!--/.row-->
 </div><!--/.container-->
 <hr>
+
+  <!--<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-xs">
+        <div id="carousel-299058" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-299058" data-slide-to="0" class=""> </li>
+            <li data-target="#carousel-299058" data-slide-to="1" class="active"> </li>
+            <li data-target="#carousel-299058" data-slide-to="2" class=""> </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item"> <img class="img-responsive" src="img/1920x500.gif" alt="thumb">
+              <div class="carousel-caption"> Carousel caption. Here goes slide description. Lorem ipsum dolor set amet. </div>
+            </div>
+            <div class="item active"> <img class="img-responsive" src="img/1920x500.gif" alt="thumb">
+              <div class="carousel-caption"> Carousel caption 2. Here goes slide description. Lorem ipsum dolor set amet. </div>
+            </div>
+            <div class="item"> <img class="img-responsive" src="img/1920x500.gif" alt="thumb">
+              <div class="carousel-caption"> Carousel caption 3. Here goes slide description. Lorem ipsum dolor set amet. </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-299058" data-slide="prev"><span class="icon-prev"></span></a> <a class="right carousel-control" href="#carousel-299058" data-slide="next"><span class="icon-next"></span></a></div>
+      </div>
+    </div>
+    <hr>
+  </div>--><!--/.container-->
 
 
     <footer class="text-center">
@@ -251,6 +273,8 @@
 <script src="js/jquery-1.11.2.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.min.js"></script>
+<script src="js/flot/jquery.flot.min.js"></script>
+<script src="js/graph.js"></script>
 <script>
 $(function(){
 	$(window).scroll(function(){if($(this).scrollTop()!=0){$('#pagetop').fadeIn();}else{$('#pagetop').fadeOut();}})
@@ -270,5 +294,6 @@ $(function(){
    });
 });
 </script>
+
 </body>
 </html>
